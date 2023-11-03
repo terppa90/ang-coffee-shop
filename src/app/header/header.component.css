@@ -1,0 +1,39 @@
+header {
+  background: white;
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+
+a {
+  color: #e72929;
+  /* color: #eb0000; */
+  font-weight: bold;
+}
+
+a:hover {
+  /* background: lightcoral; */
+  /* color: lightgray; */
+  opacity: 0.8;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+a.logo {
+  color: black;
+  font-weight: bold;
+  padding: 2em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+nav ul li a {
+  padding: 2em;
+  display: inline-block;
+}

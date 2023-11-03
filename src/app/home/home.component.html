@@ -1,0 +1,24 @@
+<app-search></app-search>
+<app-not-found
+  [visible]="!products || products.length <= 0"
+  notFoundMessage="Not Found!"
+  resetLinkText="Reset Search"
+></app-not-found>
+<ul>
+  <li *ngFor="let product of products">
+    <a routerLink="/product/{{ product.id }}">
+      <img src="{{ product.imageUrl }}" alt="" />
+      <div class="content">
+        <div class="name">
+          {{ product.name }}
+        </div>
+        <span class="favorite {{ product.favorite ? '' : 'not' }}"> ♥ </span>
+        <div class="stars">
+          <div class="price">
+            {{ product.price | currency }}
+          </div>
+        </div>
+      </div>
+    </a>
+  </li>
+</ul>
